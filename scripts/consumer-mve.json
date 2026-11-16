@@ -1,0 +1,17 @@
+{
+  "nwdaf_base_url": "http://192.168.107.5:8080",
+  "subscribe_path": "/nnwdaf-eventssubscription/v1/subscriptions",
+  "supi": "imsi-208930000000101",
+  "group_ids": ["group-test-001", "group-test-002", "group-mve-s1", "group-mve-s2"],
+  "target_mode": "group",
+  "callback_host": "127.0.0.11",
+  "callback_bind": "127.0.0.11",
+  "callback_port": 9095,
+  "callback_path": "/callback",
+  "rep_period": 5,
+  "notif_method": "PERIODIC",
+  "state_file": ".state-mve.json",
+  "timeout_sec": 5,
+  "retry_count": 3,
+  "retry_backoff_sec": 2
+}

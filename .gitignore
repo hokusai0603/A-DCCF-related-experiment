@@ -1,0 +1,15 @@
+# Copies of other repos' files and the MongoDB dump (kept on the host only)
+backup/
+
+# Lab UPF binary; its source commit is recorded in PROVENANCE.txt
+newstack/bin/*
+!newstack/bin/PROVENANCE.txt
+
+# Regenerable caches
+cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Runtime state of the P4 driver
+results/driver.pid

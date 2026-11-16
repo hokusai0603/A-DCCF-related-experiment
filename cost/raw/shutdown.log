@@ -1,0 +1,16 @@
+gNB stopped
+gNB2 stopped
+nwdaf stopped
+adrf stopped
+core stopped
+upf-ees upf stopped
+upf-ees2 upf stopped
+tcpdump.log
+generic-receive-offload: on
+gNB: poweroff
+gNB2: poweroff
+MEC: poweroff
+MEC2: poweroff
+5GC: poweroff
+UPF-EES: poweroff
+UPF-EES2: poweroff

@@ -1,0 +1,11 @@
+{
+ "run": "pilot-S3-seed1-d180",
+ "scenario": "S3",
+ "seed": 1,
+ "attempt": 1,
+ "duration_s": 180,
+ "since": "2026-11-11T05:53:25.067Z",
+ "t0": 1794376471,
+ "end": 1794376651,
+ "schedule": "traces/schedules/S3-seed1.json"
+}

@@ -1,0 +1,17 @@
+{
+ "tag": "p1-u26",
+ "period": 1,
+ "nue": 26,
+ "since": "2026-11-10T11:55:46Z",
+ "start": "2026-11-10T11:56:46Z",
+ "end": "2026-11-10T12:06:46Z",
+ "duration": 600,
+ "records": {
+  "corrIds": 26,
+  "min": 600,
+  "max": 600,
+  "total": 15600,
+  "expected_per_ue": 600
+ },
+ "adrf_records_in_window": 15600
+}

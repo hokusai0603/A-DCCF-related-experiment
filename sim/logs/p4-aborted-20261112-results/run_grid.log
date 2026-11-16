@@ -1,0 +1,32 @@
+2026-11-12T13:34:40 run_grid: out=/home/king25158986/Research-data-collection/results scenarios=('S1', 'S2', 'S3', 'S4') seeds=(1, 2, 3) cfg={'t2_stride': 1, 'b3': {'cv_source': 'producer', 'p0': 1, 'k_mode': 'max'}, 'traces': '/home/king25158986/Research-data-collection/traces'}
+2026-11-12T13:34:40 compute: 12 runs, 288 tasks, n_jobs=7
+2026-11-12T13:34:41 [1/288] S2-seed2 base done 0.5s
+2026-11-12T13:34:41 [2/288] S1-seed2 base done 0.5s
+2026-11-12T13:34:41 [3/288] S1-seed3 base done 0.5s
+2026-11-12T13:34:41 [4/288] S2-seed1 base done 0.5s
+2026-11-12T13:34:41 [5/288] S2-seed3 base done 0.5s
+2026-11-12T13:34:41 [6/288] S1-seed1 base done 0.5s
+2026-11-12T13:34:41 [7/288] S3-seed1 base done 0.5s
+2026-11-12T13:34:41 [8/288] S3-seed2 base done 0.4s
+2026-11-12T13:34:41 [9/288] S4-seed3 base done 0.4s
+2026-11-12T13:34:41 [10/288] S4-seed1 base done 0.4s
+2026-11-12T13:34:41 [11/288] S4-seed2 base done 0.4s
+2026-11-12T13:34:41 [12/288] S3-seed3 base done 0.4s
+2026-11-12T13:35:29 [13/288] S2-seed2 B3_hi0.2_lo0.05 done 47.4s
+2026-11-12T13:35:29 [14/288] S2-seed3 B3_hi0.2_lo0.05 done 47.9s
+2026-11-12T13:35:30 [15/288] S2-seed1 B3_hi0.2_lo0.05 done 48.3s
+2026-11-12T13:35:33 [16/288] S3-seed1 B3_hi0.2_lo0.05 done 51.2s
+2026-11-12T13:35:36 [17/288] S1-seed1 B3_hi0.2_lo0.05 done 55.4s
+2026-11-12T13:35:37 [18/288] S1-seed2 B3_hi0.2_lo0.05 done 55.9s
+2026-11-12T13:35:38 [19/288] S1-seed3 B3_hi0.2_lo0.05 done 56.6s
+2026-11-12T13:36:17 [20/288] S3-seed2 B3_hi0.2_lo0.05 done 48.5s
+2026-11-12T13:36:18 [21/288] S3-seed3 B3_hi0.2_lo0.05 done 48.7s
+2026-11-12T13:36:28 [22/288] S4-seed1 B3_hi0.2_lo0.05 done 57.8s
+2026-11-12T13:36:31 [23/288] S1-seed1 B3_hi0.2_lo0.1 done 53.8s
+2026-11-12T13:36:32 [24/288] S4-seed2 B3_hi0.2_lo0.05 done 59.4s
+2026-11-12T13:36:33 [25/288] S1-seed2 B3_hi0.2_lo0.1 done 54.5s
+2026-11-12T13:36:36 [26/288] S4-seed3 B3_hi0.2_lo0.05 done 59.5s
+/home/king25158986/daisy-env/lib/python3.10/site-packages/joblib/externals/loky/backend/resource_tracker.py:359: UserWarning: resource_tracker: There appear to be 13 leaked semlock objects to clean up at shutdown
+  warnings.warn(
+/home/king25158986/daisy-env/lib/python3.10/site-packages/joblib/externals/loky/backend/resource_tracker.py:359: UserWarning: resource_tracker: There appear to be 2 leaked folder objects to clean up at shutdown
+  warnings.warn(

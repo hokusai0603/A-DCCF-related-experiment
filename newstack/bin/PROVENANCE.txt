@@ -1,0 +1,2 @@
+upf-682b469: built from ~/go-upf 682b46976d398dbc738f678f61998c9fea614a82 (branch pr/embedded-ees-review), GOTOOLCHAIN=auto CGO_ENABLED=0 go build -trimpath ./cmd, 2026-11-10
+180b2b2280585fabe50749457761d933984568b2e84edee1e2afab6e87934d8e  /home/king25158986/Research-data-collection/newstack/bin/upf-682b469

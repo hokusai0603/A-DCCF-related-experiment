@@ -1,0 +1,3 @@
+upf-ees drop-logs since 2026-11-10T08:18:42Z: 0
+upf-ees2 drop-logs since 2026-11-10T08:18:42Z: 0
+ulPkts/window 0 count 13800

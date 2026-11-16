@@ -1,0 +1,40 @@
+disk avail 17G
+/home/king25158986/free5gc-NWDAF/5G_Infrastructure/config/5GC/nwdafcfg.yaml:      samplingInterval: 1   # UPF 
+/home/king25158986/free5gc-NWDAF/5G_Infrastructure/config/5GC/smfcfg.yaml:  urrPeriod: 1 # default usage repor
+/home/king25158986/free5gc-NWDAF/5G_Infrastructure/config/5GC/UPF-EES.yaml:  periodSec: 1   # MVE P0 (2026-11-
+/home/king25158986/free5gc-NWDAF/5G_Infrastructure/config/5GC/UPF-EES2.yaml:  periodSec: 1   # MVE P0 (2026-11
+2026-11-10 08:57:54,747 INFO Unsubscribe: subscriptionId=b27c38ba-ad33-4b34-a0ba-cc6d0d5b56eb status=204
+gNB stopped
+gNB2 stopped
+nwdaf stopped
+core stopped
+upf-ees upf stopped
+upf-ees2 upf stopped
+upf-ees: new upf pids=1425 
+upf-ees2: new upf pids=3634 
+core up: 8/8, smf=/home/vagrant/mve-bin/smf
+nwdaf: /home/vagrant/mve-bin/nwdaf
+gNB gnb=1 ue_procs=2
+gNB2 gnb=1 ue_procs=2
+new UEs: 40  #1 pass 40  #2 pass 40
+existing UEs: 6  #1 pass 6  #2 pass 6
+wrote /home/king25158986/Research-data-collection/p0/ue_check.csv
+subscribed at/after 2026-11-10T08:59:58Z
+gNB pings: 23
+gNB2 pings: 23
+window 2026-11-10T09:00:50Z .. 2026-11-10T09:10:50Z
+window 2026-11-10T09:00:50Z .. 2026-11-10T09:10:50Z (600 s)
+#3 NWDAF per-SUPI SMF subscriptions since 2026-11-10T08:59:58Z: 46 (new SUPIs 40/40)
+#3 UPF EES subscriptions notifying: {'UPF-EES': 23, 'UPF-EES2': 23}
+#3 SUPIs with records: 46/46; record ip == UE ip: 46/46
+#4 records per UE: min 600 max 600 (expected 600); dup timestamps total 0
+#4 interval: min 0.914 max 1.092; share of intervals == 1 s: worst UE 1.0
+#4 nonzero-volume records per UE: min 600 max 600; median spacing between nonzero records (s): [(1.0, 46)]; UEs with <2 nonzero records: 0; max spacing 1.092
+#4 UL packets reported / ping replies (each reply = request that crossed the UPF UL path): min 0.9997 median 1.0 max 1.0
+wrote /home/king25158986/Research-data-collection/p0/run-1s-newstack-r2/collection_check.csv
+upf-ees drop-logs since 2026-11-10T08:59:58Z: 0
+upf-ees2 drop-logs since 2026-11-10T08:59:58Z: 0
+ulPkts/window Long('4') count 1104
+ulPkts/window Long('5') count 26442
+ulPkts/window Long('6') count 54
+RUN-DONE 1s-newstack-r2

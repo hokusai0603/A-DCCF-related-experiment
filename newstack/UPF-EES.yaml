@@ -1,0 +1,23 @@
+version: 1.0.3
+description: DERIVED by newstack.sh gen from config/5GC/UPF-EES.yaml
+pfcp:
+  addr: 192.168.105.10
+  nodeID: 192.168.105.10
+  retransTimeout: 1s
+  maxRetrans: 3
+gtpu:
+  forwarder: gtp5g
+  ifList:
+  - addr: 192.168.103.10
+    type: N3
+dnnList:
+- dnn: internet
+  cidr: 10.10.0.0/24
+logger:
+  enable: true
+  level: info
+  reportCaller: false
+ees:
+  enabled: true
+  ip: 192.168.107.10
+  port: 8088

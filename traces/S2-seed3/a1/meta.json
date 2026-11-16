@@ -1,0 +1,11 @@
+{
+ "run": "S2-seed3",
+ "scenario": "S2",
+ "seed": 3,
+ "attempt": 1,
+ "duration_s": 1800,
+ "since": "2026-11-11T11:14:20.804Z",
+ "t0": 1794395727,
+ "end": 1794397527,
+ "schedule": "traces/schedules/S2-seed3.json"
+}

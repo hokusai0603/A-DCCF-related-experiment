@@ -1,0 +1,436 @@
+{
+ "scenarios": [
+  "S1",
+  "S2",
+  "S3",
+  "S4"
+ ],
+ "variants": {
+  "main": {
+   "H1": {
+    "rule": "eps = 5 %: T1 lowest-cost B2 is >= 50 % cheaper than B1; primary reading (PREREGISTRATION 7, 2026-11-12): in every scenario; pooled reported alongside",
+    "reduction_vs_b1": {
+     "S1": 0.9867880289076123,
+     "S2": 0.9864040498710507,
+     "S3": 0.9864040498710507,
+     "S4": 0.9864040498710507,
+     "all": 0.986500044630191
+    },
+    "every_scenario_ge_50pct": true,
+    "all_scenarios_pooled_ge_50pct": true
+   },
+   "H2": {
+    "rule": "eps = 5 %: regret(T1) or regret(T2) >= 30 % or no feasible static setting; same direction at eps = 2 % and 10 %",
+    "by_eps": {
+     "0.02": {
+      "T1": {
+       "regret": 0.0,
+       "no_static": false,
+       "ge_30pct_or_no_static": false
+      },
+      "T2": {
+       "regret": 0.3259668508287292,
+       "no_static": false,
+       "ge_30pct_or_no_static": true
+      }
+     },
+     "0.05": {
+      "T1": {
+       "regret": 0.007110746406992163,
+       "no_static": false,
+       "ge_30pct_or_no_static": false
+      },
+      "T2": {
+       "regret": 0.3259668508287292,
+       "no_static": false,
+       "ge_30pct_or_no_static": true
+      }
+     },
+     "0.1": {
+      "T1": {
+       "regret": 0.007110746406992163,
+       "no_static": false,
+       "ge_30pct_or_no_static": false
+      },
+      "T2": {
+       "regret": 0.3259668508287292,
+       "no_static": false,
+       "ge_30pct_or_no_static": true
+      }
+     }
+    }
+   },
+   "B3": {
+    "rule": "B3 regret <= 10 %",
+    "by_consumer": {
+     "T1": {
+      "0.01": {
+       "regret_b3": 8.464840936175678,
+       "b3_no_feasible": false,
+       "le_10pct": false
+      },
+      "0.02": {
+       "regret_b3": 8.464840936175678,
+       "b3_no_feasible": false,
+       "le_10pct": false
+      },
+      "0.05": {
+       "regret_b3": 8.532143019855342,
+       "b3_no_feasible": false,
+       "le_10pct": false
+      },
+      "0.1": {
+       "regret_b3": 8.532143019855342,
+       "b3_no_feasible": false,
+       "le_10pct": false
+      },
+      "0.2": {
+       "regret_b3": 8.532143019855342,
+       "b3_no_feasible": false,
+       "le_10pct": false
+      }
+     },
+     "T2": {
+      "0.01": {
+       "regret_b3": null,
+       "b3_no_feasible": true,
+       "le_10pct": false
+      },
+      "0.02": {
+       "regret_b3": null,
+       "b3_no_feasible": true,
+       "le_10pct": false
+      },
+      "0.05": {
+       "regret_b3": null,
+       "b3_no_feasible": true,
+       "le_10pct": false
+      },
+      "0.1": {
+       "regret_b3": -0.44433115709017246,
+       "b3_no_feasible": false,
+       "le_10pct": true
+      },
+      "0.2": {
+       "regret_b3": -0.4558167752009007,
+       "b3_no_feasible": false,
+       "le_10pct": true
+      }
+     }
+    }
+   }
+  },
+  "sensitivity": {
+   "H1": {
+    "rule": "eps = 5 %: T1 lowest-cost B2 is >= 50 % cheaper than B1; primary reading (PREREGISTRATION 7, 2026-11-12): in every scenario; pooled reported alongside",
+    "reduction_vs_b1": {
+     "S1": 0.9859629136244629,
+     "S2": 0.9856706436733079,
+     "S3": 0.9856706436733079,
+     "S4": 0.9856706436733079,
+     "all": 0.9857437111610967
+    },
+    "every_scenario_ge_50pct": true,
+    "all_scenarios_pooled_ge_50pct": true
+   },
+   "H2": {
+    "rule": "eps = 5 %: regret(T1) or regret(T2) >= 30 % or no feasible static setting; same direction at eps = 2 % and 10 %",
+    "by_eps": {
+     "0.02": {
+      "T1": {
+       "regret": 0.0,
+       "no_static": false,
+       "ge_30pct_or_no_static": false
+      },
+      "T2": {
+       "regret": 0.3259668508287292,
+       "no_static": false,
+       "ge_30pct_or_no_static": true
+      }
+     },
+     "0.05": {
+      "T1": {
+       "regret": 0.005125281103265156,
+       "no_static": false,
+       "ge_30pct_or_no_static": false
+      },
+      "T2": {
+       "regret": 0.3259668508287292,
+       "no_static": false,
+       "ge_30pct_or_no_static": true
+      }
+     },
+     "0.1": {
+      "T1": {
+       "regret": 0.005125281103265156,
+       "no_static": false,
+       "ge_30pct_or_no_static": false
+      },
+      "T2": {
+       "regret": 0.3259668508287292,
+       "no_static": false,
+       "ge_30pct_or_no_static": true
+      }
+     }
+    }
+   },
+   "B3": {
+    "rule": "B3 regret <= 10 %",
+    "by_consumer": {
+     "T1": {
+      "0.01": {
+       "regret_b3": 6.113336964252322,
+       "b3_no_feasible": false,
+       "le_10pct": false
+      },
+      "0.02": {
+       "regret_b3": 6.113336964252322,
+       "b3_no_feasible": false,
+       "le_10pct": false
+      },
+      "0.05": {
+       "regret_b3": 6.149794815776362,
+       "b3_no_feasible": false,
+       "le_10pct": false
+      },
+      "0.1": {
+       "regret_b3": 6.149794815776362,
+       "b3_no_feasible": false,
+       "le_10pct": false
+      },
+      "0.2": {
+       "regret_b3": 6.149794815776362,
+       "b3_no_feasible": false,
+       "le_10pct": false
+      }
+     },
+     "T2": {
+      "0.01": {
+       "regret_b3": null,
+       "b3_no_feasible": true,
+       "le_10pct": false
+      },
+      "0.02": {
+       "regret_b3": null,
+       "b3_no_feasible": true,
+       "le_10pct": false
+      },
+      "0.05": {
+       "regret_b3": null,
+       "b3_no_feasible": true,
+       "le_10pct": false
+      },
+      "0.1": {
+       "regret_b3": -0.47477634523054923,
+       "b3_no_feasible": false,
+       "le_10pct": true
+      },
+      "0.2": {
+       "regret_b3": -0.485217121435344,
+       "b3_no_feasible": false,
+       "le_10pct": true
+      }
+     }
+    }
+   }
+  }
+ },
+ "H3": {
+  "rule": "R^2 >= 0.95 of notifications and bytes vs UE count (6, 26, 46)",
+  "fits": [
+   {
+    "strategy": "B0",
+    "config": "B0",
+    "metric": "notifications",
+    "slope": 43199.999999999985,
+    "intercept": -1.0532457511597797e-09,
+    "r2": 1.0
+   },
+   {
+    "strategy": "B0",
+    "config": "B0",
+    "metric": "bytes_up",
+    "slope": 45171215.99999999,
+    "intercept": -1.6175295838608062e-06,
+    "r2": 1.0
+   },
+   {
+    "strategy": "B1",
+    "config": "B1",
+    "metric": "notifications",
+    "slope": 21599.999999999993,
+    "intercept": -5.266228755798899e-10,
+    "r2": 1.0
+   },
+   {
+    "strategy": "B1",
+    "config": "B1",
+    "metric": "bytes_up",
+    "slope": 22585607.999999996,
+    "intercept": -8.087647919304031e-07,
+    "r2": 1.0
+   },
+   {
+    "strategy": "B2 c_static(T1, eps=5%)",
+    "config": "B2_p60_k1_mean+max",
+    "metric": "notifications",
+    "slope": 359.99999999999994,
+    "intercept": -1.2340738292262713e-11,
+    "r2": 1.0
+   },
+   {
+    "strategy": "B2 c_static(T1, eps=5%)",
+    "config": "B2_p60_k1_mean+max",
+    "metric": "bytes_up",
+    "slope": 307072.8,
+    "intercept": -8.517352476217147e-09,
+    "r2": 1.0
+   },
+   {
+    "strategy": "B2 c_static(T2, eps=5%)",
+    "config": "B2_p1_k10_mean",
+    "metric": "notifications",
+    "slope": 2159.9999999999995,
+    "intercept": -6.581433735931605e-11,
+    "r2": 1.0
+   },
+   {
+    "strategy": "B2 c_static(T2, eps=5%)",
+    "config": "B2_p1_k10_mean",
+    "metric": "bytes_up",
+    "slope": 7081775.999999997,
+    "intercept": -2.0511471964042386e-07,
+    "r2": 1.0
+   },
+   {
+    "strategy": "B3_hi0.2_lo0.05",
+    "config": "B3_hi0.2_lo0.05",
+    "metric": "notifications",
+    "slope": 359.99999999999994,
+    "intercept": -1.2340738292262713e-11,
+    "r2": 1.0
+   },
+   {
+    "strategy": "B3_hi0.2_lo0.05",
+    "config": "B3_hi0.2_lo0.05",
+    "metric": "bytes_up",
+    "slope": 2975822.306999999,
+    "intercept": -99347.62200010032,
+    "r2": 0.9999991301618316
+   },
+   {
+    "strategy": "B3_hi0.2_lo0.1",
+    "config": "B3_hi0.2_lo0.1",
+    "metric": "notifications",
+    "slope": 359.99999999999994,
+    "intercept": -1.2340738292262713e-11,
+    "r2": 1.0
+   },
+   {
+    "strategy": "B3_hi0.2_lo0.1",
+    "config": "B3_hi0.2_lo0.1",
+    "metric": "bytes_up",
+    "slope": 2975022.3509999993,
+    "intercept": -89214.8460000754,
+    "r2": 0.9999993952481071
+   },
+   {
+    "strategy": "B3_hi0.5_lo0.05",
+    "config": "B3_hi0.5_lo0.05",
+    "metric": "notifications",
+    "slope": 359.99999999999994,
+    "intercept": -1.2340738292262713e-11,
+    "r2": 1.0
+   },
+   {
+    "strategy": "B3_hi0.5_lo0.05",
+    "config": "B3_hi0.5_lo0.05",
+    "metric": "bytes_up",
+    "slope": 2971118.8619999983,
+    "intercept": -134382.73200008104,
+    "r2": 0.9999981694639174
+   },
+   {
+    "strategy": "B3_hi0.5_lo0.1",
+    "config": "B3_hi0.5_lo0.1",
+    "metric": "notifications",
+    "slope": 359.99999999999994,
+    "intercept": -1.2340738292262713e-11,
+    "r2": 1.0
+   },
+   {
+    "strategy": "B3_hi0.5_lo0.1",
+    "config": "B3_hi0.5_lo0.1",
+    "metric": "bytes_up",
+    "slope": 2970318.906,
+    "intercept": -124249.95600011907,
+    "r2": 0.9999985651605626
+   },
+   {
+    "strategy": "B3_hi0.5_lo0.2",
+    "config": "B3_hi0.5_lo0.2",
+    "metric": "notifications",
+    "slope": 359.99999999999994,
+    "intercept": -1.2340738292262713e-11,
+    "r2": 1.0
+   },
+   {
+    "strategy": "B3_hi0.5_lo0.2",
+    "config": "B3_hi0.5_lo0.2",
+    "metric": "bytes_up",
+    "slope": 2969652.2759999996,
+    "intercept": -124694.37600005553,
+    "r2": 0.9999988582801548
+   },
+   {
+    "strategy": "B3_hi1.0_lo0.05",
+    "config": "B3_hi1.0_lo0.05",
+    "metric": "notifications",
+    "slope": 359.99999999999994,
+    "intercept": -1.2340738292262713e-11,
+    "r2": 1.0
+   },
+   {
+    "strategy": "B3_hi1.0_lo0.05",
+    "config": "B3_hi1.0_lo0.05",
+    "metric": "bytes_up",
+    "slope": 2909507.4359999993,
+    "intercept": -92597.37600007381,
+    "r2": 0.9999994068195789
+   },
+   {
+    "strategy": "B3_hi1.0_lo0.1",
+    "config": "B3_hi1.0_lo0.1",
+    "metric": "notifications",
+    "slope": 359.99999999999994,
+    "intercept": -1.2340738292262713e-11,
+    "r2": 1.0
+   },
+   {
+    "strategy": "B3_hi1.0_lo0.1",
+    "config": "B3_hi1.0_lo0.1",
+    "metric": "bytes_up",
+    "slope": 2908485.2699999986,
+    "intercept": -79649.9400000883,
+    "r2": 0.9999996778900305
+   },
+   {
+    "strategy": "B3_hi1.0_lo0.2",
+    "config": "B3_hi1.0_lo0.2",
+    "metric": "notifications",
+    "slope": 359.99999999999994,
+    "intercept": -1.2340738292262713e-11,
+    "r2": 1.0
+   },
+   {
+    "strategy": "B3_hi1.0_lo0.2",
+    "config": "B3_hi1.0_lo0.2",
+    "metric": "bytes_up",
+    "slope": 2907818.6399999987,
+    "intercept": -80094.36000007311,
+    "r2": 0.9999998104987226
+   }
+  ],
+  "min_r2": 0.9999981694639174
+ }
+}

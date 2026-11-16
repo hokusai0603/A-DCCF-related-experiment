@@ -1,0 +1,7 @@
+{
+ "run": "S4-seed1",
+ "final_attempt": 1,
+ "valid": true,
+ "attempts": 1,
+ "rule": "PREREGISTRATION 2.3: up to 2 re-runs; if still invalid the last attempt is kept and flagged"
+}

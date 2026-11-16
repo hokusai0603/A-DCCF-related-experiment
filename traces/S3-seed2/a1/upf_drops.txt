@@ -1,0 +1,2 @@
+upf-ees drop-logs since 2026-11-11T09:31:23.017Z: 0
+upf-ees2 drop-logs since 2026-11-11T09:31:23.017Z: 0

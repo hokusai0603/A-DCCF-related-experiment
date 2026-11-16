@@ -1,0 +1,10 @@
+5GC t=1794317821.017772316 tck=100 nproc=2
+5GC smf 123
+5GC nwdaf 73
+5GC adrf 28
+5GC amf 119
+upf-ees t=1794317822.644826703 tck=100 nproc=2
+upf-ees upf 55
+upf-ees2 t=1794317824.326733870 tck=100 nproc=2
+upf-ees2 upf 57
+mongo t=1794317824.553 free5gc.dataSize=19159124 free5gc.storageSize=6819840 adrf.dataSize=101626556 adrf.storageSize=18857984 adrf.records=87832 adrf.records.size=101626556

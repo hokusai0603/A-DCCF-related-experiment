@@ -1,0 +1,144 @@
+generated: ['UPF-EES.yaml', 'UPF-EES2.yaml', 'nwdafcfg.yaml', 'smfcfg.yaml'] period override: 1
+  urrPeriod: 1 # default usage report period in seconds (MVE P0 2026-11-10: was 5; UPF EES tick is rounded up to this)
+      samplingInterval: 1   # UPF report period (seconds); governs smf repPeriod  (MVE P0 2026-11-10: was 5)
+skip p1-u6 (done)
+=== CELL p1-u26 2026-11-10T11:53:22Z
+[p1-u26] disk avail 16G
+upf-ees: new upf pids=2471 
+upf-ees2: new upf pids=2421 
+core up: 8/8, smf=/home/vagrant/mve-bin/smf
+adrf: /home/vagrant/adrf/bin/adrf
+adrf :9888 listening
+nwdaf: /home/vagrant/mve-bin/nwdaf
+gNB gnb=1 ue_procs=2
+gNB2 gnb=1 ue_procs=2
+existing UEs: 6  #1 pass 6  #2 pass 6
+wrote /home/king25158986/Research-data-collection/cost/raw/p1-u26.ue_check.csv
+tcpdump running
+[p1-u26] subscribed at/after 2026-11-10T11:55:46Z (26 UEs, period 1 s)
+394602 packets captured
+570328 packets received by filter
+0 packets dropped by kernel
+[p1-u26] window 2026-11-10T11:56:46Z..2026-11-10T12:06:46Z records: corrIds=26 min=600 max=600 total=15600 expected/UE=600
+[p1-u26] pcap ok 16M
+CELL-DONE p1-u26
+=== CELL p1-u46 2026-11-10T12:07:08Z
+[p1-u46] disk avail 16G
+upf-ees: new upf pids=2769 
+upf-ees2: new upf pids=2718 
+core up: 8/8, smf=/home/vagrant/mve-bin/smf
+adrf: /home/vagrant/adrf/bin/adrf
+adrf :9888 listening
+nwdaf: /home/vagrant/mve-bin/nwdaf
+gNB gnb=1 ue_procs=2
+gNB2 gnb=1 ue_procs=2
+existing UEs: 6  #1 pass 6  #2 pass 6
+wrote /home/king25158986/Research-data-collection/cost/raw/p1-u46.ue_check.csv
+tcpdump running
+[p1-u46] subscribed at/after 2026-11-10T12:09:30Z (46 UEs, period 1 s)
+662885 packets captured
+972448 packets received by filter
+0 packets dropped by kernel
+[p1-u46] window 2026-11-10T12:10:30Z..2026-11-10T12:20:30Z records: corrIds=46 min=600 max=600 total=27600 expected/UE=600
+[p1-u46] pcap ok 27M
+CELL-DONE p1-u46
+generated: ['UPF-EES.yaml', 'UPF-EES2.yaml', 'nwdafcfg.yaml', 'smfcfg.yaml'] period override: 5
+  urrPeriod: 5 # default usage report period in seconds (MVE P0 2026-11-10: was 5; UPF EES tick is rounded up to this)
+      samplingInterval: 5   # UPF report period (seconds); governs smf repPeriod  (MVE P0 2026-11-10: was 5)
+=== CELL p5-u6 2026-11-10T12:21:02Z
+[p5-u6] disk avail 16G
+upf-ees: new upf pids=3192 
+upf-ees2: new upf pids=3141 
+core up: 8/8, smf=/home/vagrant/mve-bin/smf
+adrf: /home/vagrant/adrf/bin/adrf
+adrf :9888 listening
+nwdaf: /home/vagrant/mve-bin/nwdaf
+gNB gnb=1 ue_procs=2
+gNB2 gnb=1 ue_procs=2
+existing UEs: 6  #1 pass 6  #2 pass 6
+wrote /home/king25158986/Research-data-collection/cost/raw/p5-u6.ue_check.csv
+tcpdump running
+[p5-u6] subscribed at/after 2026-11-10T12:23:22Z (6 UEs, period 5 s)
+26652 packets captured
+36055 packets received by filter
+0 packets dropped by kernel
+[p5-u6] window 2026-11-10T12:24:22Z..2026-11-10T12:34:22Z records: corrIds=6 min=120 max=120 total=720 expected/UE=120
+[p5-u6] pcap ok 1.1M
+CELL-DONE p5-u6
+=== CELL p5-u26 2026-11-10T12:34:43Z
+[p5-u26] disk avail 16G
+upf-ees: new upf pids=3508 
+upf-ees2: new upf pids=3437 
+core up: 8/8, smf=/home/vagrant/mve-bin/smf
+adrf: /home/vagrant/adrf/bin/adrf
+adrf :9888 listening
+nwdaf: /home/vagrant/mve-bin/nwdaf
+gNB gnb=1 ue_procs=2
+gNB2 gnb=1 ue_procs=2
+existing UEs: 6  #1 pass 6  #2 pass 6
+wrote /home/king25158986/Research-data-collection/cost/raw/p5-u26.ue_check.csv
+tcpdump running
+[p5-u26] subscribed at/after 2026-11-10T12:37:07Z (26 UEs, period 5 s)
+80278 packets captured
+116491 packets received by filter
+0 packets dropped by kernel
+[p5-u26] window 2026-11-10T12:38:07Z..2026-11-10T12:48:07Z records: corrIds=26 min=120 max=120 total=3120 expected/UE=120
+[p5-u26] pcap ok 3.2M
+CELL-DONE p5-u26
+=== CELL p5-u46 2026-11-10T12:48:29Z
+[p5-u46] disk avail 16G
+upf-ees: new upf pids=3805 
+upf-ees2: new upf pids=3757 
+core up: 8/8, smf=/home/vagrant/mve-bin/smf
+adrf: /home/vagrant/adrf/bin/adrf
+adrf :9888 listening
+nwdaf: /home/vagrant/mve-bin/nwdaf
+gNB gnb=1 ue_procs=2
+gNB2 gnb=1 ue_procs=2
+existing UEs: 6  #1 pass 6  #2 pass 6
+wrote /home/king25158986/Research-data-collection/cost/raw/p5-u46.ue_check.csv
+tcpdump running
+[p5-u46] subscribed at/after 2026-11-10T12:50:53Z (46 UEs, period 5 s)
+133907 packets captured
+196900 packets received by filter
+0 packets dropped by kernel
+[p5-u46] window 2026-11-10T12:51:53Z..2026-11-10T13:01:53Z records: corrIds=46 min=120 max=120 total=5520 expected/UE=120
+[p5-u46] pcap ok 5.3M
+CELL-DONE p5-u46
+generated: ['UPF-EES.yaml', 'UPF-EES2.yaml', 'nwdafcfg.yaml', 'smfcfg.yaml'] period override: 10
+  urrPeriod: 10 # default usage report period in seconds (MVE P0 2026-11-10: was 5; UPF EES tick is rounded up to this)
+      samplingInterval: 10   # UPF report period (seconds); governs smf repPeriod  (MVE P0 2026-11-10: was 5)
+=== CELL p10-u6 2026-11-10T13:02:23Z
+[p10-u6] disk avail 16G
+upf-ees: new upf pids=4226 
+upf-ees2: new upf pids=4178 
+core up: 8/8, smf=/home/vagrant/mve-bin/smf
+adrf: /home/vagrant/adrf/bin/adrf
+adrf :9888 listening
+nwdaf: /home/vagrant/mve-bin/nwdaf
+gNB gnb=1 ue_procs=2
+gNB2 gnb=1 ue_procs=1
+existing UEs: 6  #1 pass 6  #2 pass 6
+wrote /home/king25158986/Research-data-collection/cost/raw/p10-u6.ue_check.csv
+tcpdump running
+[p10-u6] subscribed at/after 2026-11-10T13:04:48Z (6 UEs, period 10 s)
+14128 packets captured
+19503 packets received by filter
+0 packets dropped by kernel
+[p10-u6] window 2026-11-10T13:05:48Z..2026-11-10T13:15:48Z records: corrIds=6 min=60 max=60 total=360 expected/UE=60
+[p10-u6] pcap ok 532K
+CELL-DONE p10-u6
+=== CELL p10-u26 2026-11-10T13:16:07Z
+[p10-u26] disk avail 16G
+upf-ees: new upf pids=4525 
+upf-ees2: new upf pids=4501 
+core up: 8/8, smf=/home/vagrant/mve-bin/smf
+adrf: /home/vagrant/adrf/bin/adrf
+adrf :9888 listening
+nwdaf: /home/vagrant/mve-bin/nwdaf
+gNB gnb=1 ue_procs=2
+gNB2 gnb=1 ue_procs=2
+existing UEs: 6  #1 pass 6  #2 pass 6
+wrote /home/king25158986/Research-data-collection/cost/raw/p10-u26.ue_check.csv
+tcpdump running
+[p10-u26] subscribed at/after 2026-11-10T13:18:26Z (26 UEs, period 10 s)

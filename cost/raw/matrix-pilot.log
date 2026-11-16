@@ -1,0 +1,24 @@
+generated: ['UPF-EES.yaml', 'UPF-EES2.yaml', 'nwdafcfg.yaml', 'smfcfg.yaml'] period override: 1
+  urrPeriod: 1 # default usage report period in seconds (MVE P0 2026-11-10: was 5; UPF EES tick is rounded up to this)
+      samplingInterval: 1   # UPF report period (seconds); governs smf repPeriod  (MVE P0 2026-11-10: was 5)
+=== CELL p1-u6 2026-11-10T11:39:02Z
+[p1-u6] disk avail 16G
+upf-ees: new upf pids=2050 
+upf-ees2: new upf pids=1995 
+core up: 8/8, smf=/home/vagrant/mve-bin/smf
+adrf: /home/vagrant/adrf/bin/adrf
+adrf :9888 listening
+nwdaf: /home/vagrant/mve-bin/nwdaf
+gNB gnb=1 ue_procs=2
+gNB2 gnb=1 ue_procs=2
+existing UEs: 6  #1 pass 6  #2 pass 6
+wrote /home/king25158986/Research-data-collection/cost/raw/p1-u6.ue_check.csv
+tcpdump running
+[p1-u6] subscribed at/after 2026-11-10T11:41:28Z (6 UEs, period 1 s)
+126559 packets captured
+168204 packets received by filter
+0 packets dropped by kernel
+[p1-u6] window 2026-11-10T11:42:28Z..2026-11-10T11:52:28Z records: corrIds=6 min=600 max=600 total=3600 expected/UE=600
+[p1-u6] pcap ok 4.7M
+CELL-DONE p1-u6
+MATRIX-DONE

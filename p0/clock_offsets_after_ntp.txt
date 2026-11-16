@@ -1,0 +1,9 @@
+VM           offset_ms     rtt_ms timesync
+5GC                4.9        6.4 ntp=yes timesyncd=active chrony=inactive vboxservice=inactive/inactive/
+UPF-EES           12.5       12.4 ntp=yes timesyncd=active chrony=inactive vboxservice=inactive/inactive/
+UPF-EES2          -5.2       24.7 ntp=yes timesyncd=active chrony=inactive vboxservice=inactive/inactive/
+gNB                3.2        6.5 ntp=yes timesyncd=active chrony=inactive vboxservice=inactive/inactive/
+gNB2               7.4        6.9 ntp=yes timesyncd=active chrony=inactive vboxservice=inactive/inactive/
+MEC                7.0        6.6 ntp=yes timesyncd=active chrony=inactive vboxservice=inactive/inactive/
+MEC2               6.0        6.6 ntp=yes timesyncd=active chrony=inactive vboxservice=inactive/inactive/
+host: ntp=yes

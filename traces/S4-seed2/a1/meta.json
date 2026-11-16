@@ -1,0 +1,11 @@
+{
+ "run": "S4-seed2",
+ "scenario": "S4",
+ "seed": 2,
+ "attempt": 1,
+ "duration_s": 1800,
+ "since": "2026-11-11T10:05:42.249Z",
+ "t0": 1794391608,
+ "end": 1794393408,
+ "schedule": "traces/schedules/S4-seed2.json"
+}

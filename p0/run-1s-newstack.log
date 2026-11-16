@@ -1,0 +1,42 @@
+disk avail 17G
+/home/king25158986/free5gc-NWDAF/5G_Infrastructure/config/5GC/nwdafcfg.yaml:      samplingInterval: 1   # UPF 
+/home/king25158986/free5gc-NWDAF/5G_Infrastructure/config/5GC/smfcfg.yaml:  urrPeriod: 1 # default usage repor
+/home/king25158986/free5gc-NWDAF/5G_Infrastructure/config/5GC/UPF-EES.yaml:  periodSec: 1   # MVE P0 (2026-11-
+/home/king25158986/free5gc-NWDAF/5G_Infrastructure/config/5GC/UPF-EES2.yaml:  periodSec: 1   # MVE P0 (2026-11
+gNB stopped
+gNB2 stopped
+nwdaf stopped
+core stopped
+upf-ees upf stopped
+upf-ees2 upf stopped
+upf-ees: new upf pids=3553 
+upf-ees2: new upf pids=3151 
+core up: 8/8, smf=/home/vagrant/mve-bin/smf
+nwdaf: /home/vagrant/mve-bin/nwdaf
+gNB gnb=1 ue_procs=4
+gNB2 gnb=1 ue_procs=4
+existing UEs: 6  #1 pass 5  #2 pass 5
+FAIL {'supi': 'imsi-208930000000006', 'core_reg_complete': True, 'core_pdu_ip': '10.100.0.16', 'ue_state': 'PS-ACTIVE', 'ue_ip': '10.100.0.16', 'tun': '', 'in_pool': True, 'ping_rx_of_3': '', 'core_reject': ''}
+wrote /home/king25158986/Research-data-collection/p0/ue_check.csv
+subscribed at/after 2026-11-10T08:39:41Z
+gNB pings: 23
+gNB2 pings: 22
+window 2026-11-10T08:40:33Z .. 2026-11-10T08:50:33Z
+Traceback (most recent call last):
+  File "/home/king25158986/Research-data-collection/scripts/p0_check_collection.py", line 138, in <module>
+window 2026-11-10T08:40:33Z .. 2026-11-10T08:50:33Z (600 s)
+#3 NWDAF per-SUPI SMF subscriptions since 2026-11-10T08:39:41Z: 46 (new SUPIs 40/40)
+#3 UPF EES subscriptions notifying: {'UPF-EES': 0, 'UPF-EES2': 23}
+#3 SUPIs with records: 46/46; record ip == UE ip: 46/46
+#4 records per UE: min 489 max 600 (expected 600); dup timestamps total 0
+#4 interval: min 0.911 max 1.074; share of intervals == 1 s: worst UE 1.0
+    main()
+  File "/home/king25158986/Research-data-collection/scripts/p0_check_collection.py", line 131, in main
+    print(f"#4 nonzero-volume records per UE: min {min(r['nonzero_records'] for r in rows)} max {max(r['nonzero_records'] for r in rows)}; median spacing between nonzero records (s): {sorted(Counter(r['nz_iv_med'] for r in rows).items())}; max spacing {max(r['nz_iv_max'] for r in rows if r['nz_iv_max'] != '')}")
+TypeError: '<' not supported between instances of 'str' and 'float'
+upf-ees2 drop-logs since 2026-11-10T08:39:41Z: 0
+ulPkts/window 0 count 600
+ulPkts/window Long('4') count 1139
+ulPkts/window Long('5') count 23094
+ulPkts/window Long('6') count 214
+RUN-DONE 1s-newstack

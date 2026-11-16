@@ -1,0 +1,18 @@
+5GC: running
+UPF-EES: running
+UPF-EES2: running
+MEC: running
+MEC2: running
+gNB: running
+gNB2: running
+5
+mongo reachable
+upf-ees: 200.25 on-link
+MEC: 106.10 on-link
+upf-ees2: 200.35 on-link
+MEC2: 109.111 on-link
+5GC: NTPSynchronized=yes
+gNB: NTPSynchronized=yes
+gNB2: NTPSynchronized=yes
+MEC: NTPSynchronized=yes
+MEC2: NTPSynchronized=yes

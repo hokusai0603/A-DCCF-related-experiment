@@ -1,0 +1,24 @@
+{
+ "unit": "wire IP bytes (L2 excluded), both directions, producer -> A-DCCF",
+ "model": "bytes(notification) = a + sum_reports (r + n_stat * s); raw report n_stat = 10",
+ "a": 556.7,
+ "a_sensitivity": 884.8,
+ "a_sensitivity_note": "a0 + c_conn*(k-2)/k, k = 23 notifications per UPF fired together (46 UEs on 2 UPFs, aligned periods)",
+ "r": 248.1,
+ "s": 24.09,
+ "n_stat_raw": 10,
+ "b_raw": 488.93,
+ "c_ka": "ignored (about 0.65 % of EES bytes at p = 30 s, 46 UEs)",
+ "derivation": {
+  "items": 546,
+  "item_json_mean": 469.8,
+  "field_json_mean": 23.2,
+  "rest_json_mean": 237.9,
+  "rest_json_range": [
+   233,
+   239
+  ],
+  "wire_factor": 1.0384,
+  "source": "cost/fit.json (a0_wire, c_conn, b_wire, synth.body_b), cost/synth/items.txt"
+ }
+}

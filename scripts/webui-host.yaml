@@ -1,0 +1,27 @@
+# Host-side webconsole (free5gc-testing/webconsole v1.4.5 binary) used only for subscriber
+# provisioning: the 5GC VM has webconsole v1.4.2 source but no Go toolchain / frontend build.
+# Same MongoDB as the core (host mongod). Bound to 127.0.0.1:5001 (host :5000 is Vagrant's forward).
+info:
+  version: 1.0.3
+  description: WebUI for MVE subscriber provisioning
+configuration:
+  mongodb:
+    name: free5gc
+    url: mongodb://127.0.0.1:27017
+  nrfUri: http://127.0.0.10:8000
+  webServer:
+    scheme: http
+    ipv4Address: 127.0.0.1
+    port: 5001
+  billingServer:
+    enable: true   # validator requires true; loopback-only, unused ports
+    hostIPv4: 127.0.0.1
+    listenPort: 21210
+    portRange:
+      start: 21212
+      end: 21219
+    basePath: /tmp/claude-1013/webconsole-mve
+logger:
+  enable: true
+  level: info
+  reportCaller: false

@@ -1,0 +1,467 @@
+{
+ "run": "pilot-S3-seed1-d180",
+ "attempt": 1,
+ "t0": 1794376471.0,
+ "duration_s": 180,
+ "records_total": 12650,
+ "records_unmapped_corr": 0,
+ "duplicates": 0,
+ "ip_mismatch": 0,
+ "corr_ids": 46,
+ "supis_with_records": 46,
+ "missing_seconds": 0,
+ "cells": 8280,
+ "missing_frac": 0.0,
+ "bin_collisions": 0,
+ "phi_s": {
+  "min": 0.3279442344544169,
+  "max": 0.780620810744029
+ },
+ "upf_ul_bytes": 382910309,
+ "upf_ul_bytes_in_grid": 381820767,
+ "upf_dl_bytes": 27893,
+ "upf_ul_pkts": 319825,
+ "iperf3_sent_bytes": 382868400,
+ "iperf3_sent_pkts": 319057,
+ "volume_ratio": 1.000109460587502,
+ "volume_ratio_hdr8": 0.9934862191266578,
+ "per_ue_ratio": {
+  "min": 1.000021950408698,
+  "max": 1.0013956114875766
+ },
+ "per_second_corr_upf_vs_iperf3": 0.9999248747407552,
+ "iperf3": {
+  "launches": 96,
+  "failed": 0,
+  "busy_retries": 0,
+  "skipped_segments": 0,
+  "lost_pkts": 0,
+  "launch_late_s": {
+   "p50": 0.00040721893310546875,
+   "p99": 0.014981818199157705,
+   "max": 0.01849842071533203
+  },
+  "first_attempt_launches": 96
+ },
+ "rules": {
+  "volume_within_5pct": true,
+  "missing_le_2pct": true
+ },
+ "per_ue": [
+  {
+   "supi": "imsi-208930000000001",
+   "upf_ul": 16961249,
+   "upf_ul_pkts": 14142,
+   "iperf_bytes": 16960800.0,
+   "iperf_pkts": 14134.0,
+   "ratio": 1.0000264728078865,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000002",
+   "upf_ul": 4702581,
+   "upf_ul_pkts": 3957,
+   "iperf_bytes": 4700400.0,
+   "iperf_pkts": 3917.0,
+   "ratio": 1.000464003063569,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000003",
+   "upf_ul": 0,
+   "upf_ul_pkts": 0,
+   "iperf_bytes": 0.0,
+   "iperf_pkts": 0.0,
+   "ratio": null,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000004",
+   "upf_ul": 8398047,
+   "upf_ul_pkts": 7006,
+   "iperf_bytes": 8397600.0,
+   "iperf_pkts": 6998.0,
+   "ratio": 1.000053229494141,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000005",
+   "upf_ul": 10268622,
+   "upf_ul_pkts": 8603,
+   "iperf_bytes": 10266000.0,
+   "iperf_pkts": 8555.0,
+   "ratio": 1.0002554061952076,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000006",
+   "upf_ul": 13446449,
+   "upf_ul_pkts": 11213,
+   "iperf_bytes": 13446000.0,
+   "iperf_pkts": 11205.0,
+   "ratio": 1.0000333928305816,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000101",
+   "upf_ul": 14461649,
+   "upf_ul_pkts": 12059,
+   "iperf_bytes": 14461200.0,
+   "iperf_pkts": 12051.0,
+   "ratio": 1.0000310485990098,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000102",
+   "upf_ul": 0,
+   "upf_ul_pkts": 0,
+   "iperf_bytes": 0.0,
+   "iperf_pkts": 0.0,
+   "ratio": null,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000103",
+   "upf_ul": 7859041,
+   "upf_ul_pkts": 6595,
+   "iperf_bytes": 7856400.0,
+   "iperf_pkts": 6547.0,
+   "ratio": 1.000336159055038,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000104",
+   "upf_ul": 18516449,
+   "upf_ul_pkts": 15438,
+   "iperf_bytes": 18516000.0,
+   "iperf_pkts": 15430.0,
+   "ratio": 1.0000242492979046,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000105",
+   "upf_ul": 13372048,
+   "upf_ul_pkts": 11151,
+   "iperf_bytes": 13371600.0,
+   "iperf_pkts": 11143.0,
+   "ratio": 1.0000335038439678,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000106",
+   "upf_ul": 6778629,
+   "upf_ul_pkts": 5710,
+   "iperf_bytes": 6775200.0,
+   "iperf_pkts": 5646.0,
+   "ratio": 1.0005061105207227,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000107",
+   "upf_ul": 0,
+   "upf_ul_pkts": 0,
+   "iperf_bytes": 0.0,
+   "iperf_pkts": 0.0,
+   "ratio": null,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000108",
+   "upf_ul": 17204849,
+   "upf_ul_pkts": 14345,
+   "iperf_bytes": 17204400.0,
+   "iperf_pkts": 14337.0,
+   "ratio": 1.0000260979749367,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000109",
+   "upf_ul": 4048922,
+   "upf_ul_pkts": 3397,
+   "iperf_bytes": 4047600.0,
+   "iperf_pkts": 3373.0,
+   "ratio": 1.0003266133017097,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000110",
+   "upf_ul": 12053249,
+   "upf_ul_pkts": 10052,
+   "iperf_bytes": 12052800.0,
+   "iperf_pkts": 10044.0,
+   "ratio": 1.0000372527545467,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000111",
+   "upf_ul": 20455649,
+   "upf_ul_pkts": 17054,
+   "iperf_bytes": 20455200.0,
+   "iperf_pkts": 17046.0,
+   "ratio": 1.000021950408698,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000112",
+   "upf_ul": 0,
+   "upf_ul_pkts": 0,
+   "iperf_bytes": 0.0,
+   "iperf_pkts": 0.0,
+   "ratio": null,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000113",
+   "upf_ul": 1241330,
+   "upf_ul_pkts": 1065,
+   "iperf_bytes": 1239600.0,
+   "iperf_pkts": 1033.0,
+   "ratio": 1.0013956114875766,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000114",
+   "upf_ul": 8099245,
+   "upf_ul_pkts": 6757,
+   "iperf_bytes": 8098800.0,
+   "iperf_pkts": 6749.0,
+   "ratio": 1.000054946411814,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000115",
+   "upf_ul": 7339646,
+   "upf_ul_pkts": 6124,
+   "iperf_bytes": 7339200.0,
+   "iperf_pkts": 6116.0,
+   "ratio": 1.0000607695661652,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000116",
+   "upf_ul": 6909361,
+   "upf_ul_pkts": 5796,
+   "iperf_bytes": 6907200.0,
+   "iperf_pkts": 5756.0,
+   "ratio": 1.0003128619411628,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000117",
+   "upf_ul": 6000447,
+   "upf_ul_pkts": 5008,
+   "iperf_bytes": 6000000.0,
+   "iperf_pkts": 5000.0,
+   "ratio": 1.0000745,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000118",
+   "upf_ul": 0,
+   "upf_ul_pkts": 0,
+   "iperf_bytes": 0.0,
+   "iperf_pkts": 0.0,
+   "ratio": null,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000119",
+   "upf_ul": 2212973,
+   "upf_ul_pkts": 1890,
+   "iperf_bytes": 2210400.0,
+   "iperf_pkts": 1842.0,
+   "ratio": 1.0011640427072024,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000120",
+   "upf_ul": 17239647,
+   "upf_ul_pkts": 14374,
+   "iperf_bytes": 17239200.0,
+   "iperf_pkts": 14366.0,
+   "ratio": 1.0000259292774607,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000201",
+   "upf_ul": 12308849,
+   "upf_ul_pkts": 10265,
+   "iperf_bytes": 12308400.0,
+   "iperf_pkts": 10257.0,
+   "ratio": 1.0000364791524488,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000202",
+   "upf_ul": 5847025,
+   "upf_ul_pkts": 4926,
+   "iperf_bytes": 5844000.0,
+   "iperf_pkts": 4870.0,
+   "ratio": 1.000517624914442,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000203",
+   "upf_ul": 0,
+   "upf_ul_pkts": 0,
+   "iperf_bytes": 0.0,
+   "iperf_pkts": 0.0,
+   "ratio": null,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000204",
+   "upf_ul": 20060847,
+   "upf_ul_pkts": 16725,
+   "iperf_bytes": 20060400.0,
+   "iperf_pkts": 16717.0,
+   "ratio": 1.0000222827062273,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000205",
+   "upf_ul": 8630844,
+   "upf_ul_pkts": 7200,
+   "iperf_bytes": 8630400.0,
+   "iperf_pkts": 7192.0,
+   "ratio": 1.000051446051168,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000206",
+   "upf_ul": 10473369,
+   "upf_ul_pkts": 8766,
+   "iperf_bytes": 10471200.0,
+   "iperf_pkts": 8726.0,
+   "ratio": 1.0002071395828558,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000207",
+   "upf_ul": 18280048,
+   "upf_ul_pkts": 15241,
+   "iperf_bytes": 18279600.0,
+   "iperf_pkts": 15233.0,
+   "ratio": 1.0000245081949277,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000208",
+   "upf_ul": 0,
+   "upf_ul_pkts": 0,
+   "iperf_bytes": 0.0,
+   "iperf_pkts": 0.0,
+   "ratio": null,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000209",
+   "upf_ul": 4201367,
+   "upf_ul_pkts": 3547,
+   "iperf_bytes": 4198800.0,
+   "iperf_pkts": 3499.0,
+   "ratio": 1.0006113651519482,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000210",
+   "upf_ul": 10790847,
+   "upf_ul_pkts": 9000,
+   "iperf_bytes": 10790400.0,
+   "iperf_pkts": 8992.0,
+   "ratio": 1.0000414257117438,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000211",
+   "upf_ul": 6218847,
+   "upf_ul_pkts": 5190,
+   "iperf_bytes": 6218400.0,
+   "iperf_pkts": 5182.0,
+   "ratio": 1.0000718834426863,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000212",
+   "upf_ul": 11978159,
+   "upf_ul_pkts": 10020,
+   "iperf_bytes": 11976000.0,
+   "iperf_pkts": 9980.0,
+   "ratio": 1.0001802772211088,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000213",
+   "upf_ul": 0,
+   "upf_ul_pkts": 0,
+   "iperf_bytes": 0.0,
+   "iperf_pkts": 0.0,
+   "ratio": null,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000214",
+   "upf_ul": 19996048,
+   "upf_ul_pkts": 16671,
+   "iperf_bytes": 19995600.0,
+   "iperf_pkts": 16663.0,
+   "ratio": 1.0000224049290845,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000215",
+   "upf_ul": 5884046,
+   "upf_ul_pkts": 4911,
+   "iperf_bytes": 5883600.0,
+   "iperf_pkts": 4903.0,
+   "ratio": 1.000075803929567,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000216",
+   "upf_ul": 3622913,
+   "upf_ul_pkts": 3042,
+   "iperf_bytes": 3621600.0,
+   "iperf_pkts": 3018.0,
+   "ratio": 1.0003625469405788,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000217",
+   "upf_ul": 5072847,
+   "upf_ul_pkts": 4235,
+   "iperf_bytes": 5072400.0,
+   "iperf_pkts": 4227.0,
+   "ratio": 1.000088123964987,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000218",
+   "upf_ul": 0,
+   "upf_ul_pkts": 0,
+   "iperf_bytes": 0.0,
+   "iperf_pkts": 0.0,
+   "ratio": null,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000219",
+   "upf_ul": 4886922,
+   "upf_ul_pkts": 4103,
+   "iperf_bytes": 4885200.0,
+   "iperf_pkts": 4071.0,
+   "ratio": 1.000352493244903,
+   "missing": 0
+  },
+  {
+   "supi": "imsi-208930000000220",
+   "upf_ul": 17087249,
+   "upf_ul_pkts": 14247,
+   "iperf_bytes": 17086800.0,
+   "iperf_pkts": 14239.0,
+   "ratio": 1.0000262775944004,
+   "missing": 0
+  }
+ ],
+ "valid": true
+}

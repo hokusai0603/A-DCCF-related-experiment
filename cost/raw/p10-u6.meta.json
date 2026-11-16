@@ -1,0 +1,17 @@
+{
+ "tag": "p10-u6",
+ "period": 10,
+ "nue": 6,
+ "since": "2026-11-10T13:04:48Z",
+ "start": "2026-11-10T13:05:48Z",
+ "end": "2026-11-10T13:15:48Z",
+ "duration": 600,
+ "records": {
+  "corrIds": 6,
+  "min": 60,
+  "max": 60,
+  "total": 360,
+  "expected_per_ue": 60
+ },
+ "adrf_records_in_window": 360
+}

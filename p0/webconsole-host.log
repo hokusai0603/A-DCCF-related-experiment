@@ -1,0 +1,411 @@
+2026-11-10T14:46:00.902260813+08:00[36m [INFO][WEBUI][Main] [0mWEBUI version:  
+	Not specify ldflags (which link version) during go build
+	go version: go1.24.10 linux/amd64
+2026-11-10T14:46:00.903514971+08:00[36m [INFO][WEBUI][CFG] [0mRead config from [/home/king25158986/Research-data-collection/scripts/webui-host.yaml]
+2026-11-10T14:46:00.903690969+08:00[36m [INFO][WEBUI][Main] [0mLog enable is set to [true]
+2026-11-10T14:46:00.903699638+08:00[36m [INFO][WEBUI][Main] [0mLog level is set to [info]
+2026-11-10T14:46:00.903703680+08:00[36m [INFO][WEBUI][Main] [0mReport Caller is set to [false]
+2026-11-10T14:46:00.904864169+08:00[36m [INFO][WEBUI][Init] [0mServer started
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/sample               --> github.com/free5gc/webconsole/backend/WebUI.GetSampleJSON (3 handlers)
+[GIN-debug] POST   /api/login                --> github.com/free5gc/webconsole/backend/WebUI.Login (3 handlers)
+[GIN-debug] POST   /api/logout               --> github.com/free5gc/webconsole/backend/WebUI.Logout (3 handlers)
+[GIN-debug] GET    /api/tenant               --> github.com/free5gc/webconsole/backend/WebUI.GetTenants (3 handlers)
+[GIN-debug] GET    /api/tenant/:tenantId     --> github.com/free5gc/webconsole/backend/WebUI.GetTenantByID (3 handlers)
+[GIN-debug] POST   /api/tenant               --> github.com/free5gc/webconsole/backend/WebUI.PostTenant (3 handlers)
+[GIN-debug] PUT    /api/tenant/:tenantId     --> github.com/free5gc/webconsole/backend/WebUI.PutTenantByID (3 handlers)
+[GIN-debug] DELETE /api/tenant/:tenantId     --> github.com/free5gc/webconsole/backend/WebUI.DeleteTenantByID (3 handlers)
+[GIN-debug] GET    /api/tenant/:tenantId/user --> github.com/free5gc/webconsole/backend/WebUI.GetUsers (3 handlers)
+[GIN-debug] GET    /api/tenant/:tenantId/user/:userId --> github.com/free5gc/webconsole/backend/WebUI.GetUserByID (3 handlers)
+[GIN-debug] POST   /api/tenant/:tenantId/user --> github.com/free5gc/webconsole/backend/WebUI.PostUserByID (3 handlers)
+[GIN-debug] PUT    /api/tenant/:tenantId/user/:userId --> github.com/free5gc/webconsole/backend/WebUI.PutUserByID (3 handlers)
+[GIN-debug] DELETE /api/tenant/:tenantId/user/:userId --> github.com/free5gc/webconsole/backend/WebUI.DeleteUserByID (3 handlers)
+[GIN-debug] GET    /api/subscriber           --> github.com/free5gc/webconsole/backend/WebUI.GetSubscribers (3 handlers)
+[GIN-debug] OPTIONS /api/subscriber           --> github.com/free5gc/webconsole/backend/WebUI.OptionsSubscribers (3 handlers)
+[GIN-debug] GET    /api/subscriber/:ueId/:servingPlmnId --> github.com/free5gc/webconsole/backend/WebUI.GetSubscriberByID (3 handlers)
+[GIN-debug] POST   /api/subscriber/:ueId/:servingPlmnId --> github.com/free5gc/webconsole/backend/WebUI.PostSubscriberByID (3 handlers)
+[GIN-debug] POST   /api/subscriber/:ueId/:servingPlmnId/:userNumber --> github.com/free5gc/webconsole/backend/WebUI.PostSubscriberByID (3 handlers)
+[GIN-debug] PUT    /api/subscriber/:ueId/:servingPlmnId --> github.com/free5gc/webconsole/backend/WebUI.PutSubscriberByID (3 handlers)
+[GIN-debug] DELETE /api/subscriber/:ueId/:servingPlmnId --> github.com/free5gc/webconsole/backend/WebUI.DeleteSubscriberByID (3 handlers)
+[GIN-debug] DELETE /api/subscriber           --> github.com/free5gc/webconsole/backend/WebUI.DeleteMultipleSubscribers (3 handlers)
+[GIN-debug] PATCH  /api/subscriber/:ueId/:servingPlmnId --> github.com/free5gc/webconsole/backend/WebUI.PatchSubscriberByID (3 handlers)
+[GIN-debug] GET    /api/registered-ue-context --> github.com/free5gc/webconsole/backend/WebUI.GetRegisteredUEContext (3 handlers)
+[GIN-debug] GET    /api/registered-ue-context/:supi --> github.com/free5gc/webconsole/backend/WebUI.GetRegisteredUEContext (3 handlers)
+[GIN-debug] GET    /api/ue-pdu-session-info/:smContextRef --> github.com/free5gc/webconsole/backend/WebUI.GetUEPDUSessionInfo (3 handlers)
+[GIN-debug] POST   /api/change-password      --> github.com/free5gc/webconsole/backend/WebUI.ChangePasswordInfo (3 handlers)
+[GIN-debug] GET    /api/charging-record      --> github.com/free5gc/webconsole/backend/WebUI.GetChargingRecord (3 handlers)
+[GIN-debug] GET    /api/charging-data/:chargingMethod --> github.com/free5gc/webconsole/backend/WebUI.GetChargingData (3 handlers)
+[GIN-debug] POST   /api/verify-staticip      --> github.com/free5gc/webconsole/backend/WebUI.VerifyStaticIP (3 handlers)
+[GIN-debug] DELETE /api/profile/:profileName --> github.com/free5gc/webconsole/backend/WebUI.DeleteProfile (3 handlers)
+[GIN-debug] DELETE /api/profile              --> github.com/free5gc/webconsole/backend/WebUI.DeleteMultipleProfiles (3 handlers)
+[GIN-debug] GET    /api/profile              --> github.com/free5gc/webconsole/backend/WebUI.GetProfiles (3 handlers)
+[GIN-debug] GET    /api/profile/:profileName --> github.com/free5gc/webconsole/backend/WebUI.GetProfile (3 handlers)
+[GIN-debug] POST   /api/profile              --> github.com/free5gc/webconsole/backend/WebUI.PostProfile (3 handlers)
+[GIN-debug] PUT    /api/profile/:profileName --> github.com/free5gc/webconsole/backend/WebUI.PutProfile (3 handlers)
+2026-11-10T14:46:00.908979974+08:00[33m [WARN][WEBUI][Consumer] [0mWebconsole-AF register to NRF Error[Put "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/05e780ee-093b-42c7-8fa0-41d76d203c37": dial tcp 127.0.0.10:8000: connect: connection refused]
+2026-11-10T14:46:00.909276915+08:00[36m [INFO][WEBUI][Init] [0mCreate tenant: admin
+2026-11-10T14:46:00.909823817+08:00[36m [INFO][WEBUI][Init] [0mCreate user: admin
+2026-11-10T14:46:01.099837074+08:00[31m [ERRO][WEBUI][Consumer] [0mSearchNFInstances failed: Get "http://127.0.0.10:8000/nnrf-disc/v1/nf-instances?requester-nf-type=AF&target-nf-type=AMF": dial tcp 127.0.0.10:8000: connect: connection refused
+2026-11-10T14:46:01.099855526+08:00[31m [ERRO][WEBUI][CTX] [0mGet "http://127.0.0.10:8000/nnrf-disc/v1/nf-instances?requester-nf-type=AF&target-nf-type=AMF": dial tcp 127.0.0.10:8000: connect: connection refused
+2026-11-10T14:46:01.099899491+08:00[36m [INFO][WEBUI][BillingLog] [0mOpen BillingServer on /tmp/claude-1013/webconsole-mve
+2026-11-10T14:46:01.100025444+08:00[36m [INFO][WEBUI][BillingLog] [0mBilling server started
+2026-11-10T14:46:01.100034556+08:00[36m [INFO][WEBUI][Main] [0mwait all routine stopped
+2026-11-10T14:46:01.100041545+08:00[36m [INFO][WEBUI][Main] [0mHttp server listening on 127.0.0.1:5001
+2026-11-10T14:46:01.100149694+08:00[36m [INFO][address:127.0.0.1:21210][category:FTPServer][component:Billing] [0mListening...
+2026-11-10T14:46:01.100161350+08:00[36m [INFO][category:FTPServer][component:Billing] [0mStarting...
+2026-11-10T14:46:02.910828526+08:00[33m [WARN][WEBUI][Consumer] [0mWebconsole-AF register to NRF Error[Put "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/05e780ee-093b-42c7-8fa0-41d76d203c37": dial tcp 127.0.0.10:8000: connect: connection refused]
+2026-11-10T14:46:04.911977124+08:00[33m [WARN][WEBUI][Consumer] [0mWebconsole-AF register to NRF Error[Put "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/05e780ee-093b-42c7-8fa0-41d76d203c37": dial tcp 127.0.0.10:8000: connect: connection refused]
+2026-11-10T14:46:05.092360965+08:00[36m [INFO][WEBUI][Proc] [0mLogin success { username: admin , userid: d3337d19-2085-434a-a65b-19c00a0e949b , tenantid: 4611e64c-37da-41f5-8c23-973b5eee5bd9 }
+2026-11-10T14:46:05.092445215+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | POST    | /api/login |  |
+2026-11-10T14:46:06.914600618+08:00[33m [WARN][WEBUI][Consumer] [0mWebconsole-AF register to NRF Error[Put "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/05e780ee-093b-42c7-8fa0-41d76d203c37": dial tcp 127.0.0.10:8000: connect: connection refused]
+2026-11-10T14:46:08.915536736+08:00[33m [WARN][WEBUI][Consumer] [0mWebconsole-AF register to NRF Error[Put "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/05e780ee-093b-42c7-8fa0-41d76d203c37": dial tcp 127.0.0.10:8000: connect: connection refused]
+2026-11-10T14:46:10.916883339+08:00[33m [WARN][WEBUI][Consumer] [0mWebconsole-AF register to NRF Error[Put "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/05e780ee-093b-42c7-8fa0-41d76d203c37": dial tcp 127.0.0.10:8000: connect: connection refused]
+2026-11-10T14:46:12.918744978+08:00[33m [WARN][WEBUI][Consumer] [0mWebconsole-AF register to NRF Error[Put "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/05e780ee-093b-42c7-8fa0-41d76d203c37": dial tcp 127.0.0.10:8000: connect: connection refused]
+2026-11-10T14:46:14.920575011+08:00[33m [WARN][WEBUI][Consumer] [0mWebconsole-AF register to NRF Error[Put "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/05e780ee-093b-42c7-8fa0-41d76d203c37": dial tcp 127.0.0.10:8000: connect: connection refused]
+2026-11-10T14:46:16.143875471+08:00[36m [INFO][WEBUI][Proc] [0mLogin success { username: admin , userid: d3337d19-2085-434a-a65b-19c00a0e949b , tenantid: 4611e64c-37da-41f5-8c23-973b5eee5bd9 }
+2026-11-10T14:46:16.143939197+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | POST    | /api/login |  |
+2026-11-10T14:46:16.150170462+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:46:16.152761196+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000001/20893 |  |
+2026-11-10T14:46:16.156356521+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:46:16.158462312+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000004/20893 |  |
+2026-11-10T14:46:16.922181701+08:00[33m [WARN][WEBUI][Consumer] [0mWebconsole-AF register to NRF Error[Put "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/05e780ee-093b-42c7-8fa0-41d76d203c37": dial tcp 127.0.0.10:8000: connect: connection refused]
+2026-11-10T14:46:18.923491622+08:00[33m [WARN][WEBUI][Consumer] [0mWebconsole-AF register to NRF Error[Put "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/05e780ee-093b-42c7-8fa0-41d76d203c37": dial tcp 127.0.0.10:8000: connect: connection refused]
+2026-11-10T14:46:20.924834125+08:00[33m [WARN][WEBUI][Consumer] [0mWebconsole-AF register to NRF Error[Put "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/05e780ee-093b-42c7-8fa0-41d76d203c37": dial tcp 127.0.0.10:8000: connect: connection refused]
+2026-11-10T14:46:22.925681323+08:00[33m [WARN][WEBUI][Consumer] [0mWebconsole-AF register to NRF Error[Put "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/05e780ee-093b-42c7-8fa0-41d76d203c37": dial tcp 127.0.0.10:8000: connect: connection refused]
+2026-11-10T14:46:24.926592025+08:00[33m [WARN][WEBUI][Consumer] [0mWebconsole-AF register to NRF Error[Put "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/05e780ee-093b-42c7-8fa0-41d76d203c37": dial tcp 127.0.0.10:8000: connect: connection refused]
+2026-11-10T14:46:26.928319713+08:00[33m [WARN][WEBUI][Consumer] [0mWebconsole-AF register to NRF Error[Put "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/05e780ee-093b-42c7-8fa0-41d76d203c37": dial tcp 127.0.0.10:8000: connect: connection refused]
+2026-11-10T14:46:28.930321361+08:00[33m [WARN][WEBUI][Consumer] [0mWebconsole-AF register to NRF Error[Put "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/05e780ee-093b-42c7-8fa0-41d76d203c37": dial tcp 127.0.0.10:8000: connect: connection refused]
+2026-11-10T14:46:30.931760231+08:00[33m [WARN][WEBUI][Consumer] [0mWebconsole-AF register to NRF Error[Put "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/05e780ee-093b-42c7-8fa0-41d76d203c37": dial tcp 127.0.0.10:8000: connect: connection refused]
+2026-11-10T14:46:32.933698896+08:00[33m [WARN][WEBUI][Consumer] [0mWebconsole-AF register to NRF Error[Put "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/05e780ee-093b-42c7-8fa0-41d76d203c37": dial tcp 127.0.0.10:8000: connect: connection refused]
+2026-11-10T14:46:34.935391091+08:00[33m [WARN][WEBUI][Consumer] [0mWebconsole-AF register to NRF Error[Put "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/05e780ee-093b-42c7-8fa0-41d76d203c37": dial tcp 127.0.0.10:8000: connect: connection refused]
+2026-11-10T14:46:36.936566573+08:00[33m [WARN][WEBUI][Consumer] [0mWebconsole-AF register to NRF Error[Put "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/05e780ee-093b-42c7-8fa0-41d76d203c37": dial tcp 127.0.0.10:8000: connect: connection refused]
+2026-11-10T14:46:38.938071190+08:00[33m [WARN][WEBUI][Consumer] [0mWebconsole-AF register to NRF Error[Put "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/05e780ee-093b-42c7-8fa0-41d76d203c37": dial tcp 127.0.0.10:8000: connect: connection refused]
+2026-11-10T14:46:40.938250488+08:00[33m [WARN][WEBUI][Consumer] [0mSend NFRegistration Failed by NF Register retry failed 10 times
+2026-11-10T14:46:40.938319449+08:00[31m [ERRO][WEBUI][Init] [0m[AF] Retry NF Registration has meet maximum
+2026-11-10T14:46:40.938339454+08:00[33m [WARN][WEBUI][Init] [0mThe registration to NRF failed, resulting in limited functionalities.
+2026-11-10T14:46:49.176137815+08:00[36m [INFO][WEBUI][Proc] [0mLogin success { username: admin , userid: d3337d19-2085-434a-a65b-19c00a0e949b , tenantid: 4611e64c-37da-41f5-8c23-973b5eee5bd9 }
+2026-11-10T14:46:49.176192816+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | POST    | /api/login |  |
+2026-11-10T14:46:49.176808091+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:46:49.178866528+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000001/20893 |  |
+2026-11-10T14:46:49.179222795+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:46:49.180839502+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000101/20893 |  |
+2026-11-10T14:46:49.181236215+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:46:49.182685486+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000004/20893 |  |
+2026-11-10T14:46:49.183059896+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:46:49.184501281+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000201/20893 |  |
+2026-11-10T14:46:49.411282030+08:00[36m [INFO][WEBUI][Proc] [0mLogin success { username: admin , userid: d3337d19-2085-434a-a65b-19c00a0e949b , tenantid: 4611e64c-37da-41f5-8c23-973b5eee5bd9 }
+2026-11-10T14:46:49.411333492+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | POST    | /api/login |  |
+2026-11-10T14:46:49.411952047+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:46:49.413935724+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000001/20893 |  |
+2026-11-10T14:46:49.414316220+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:46:49.415721515+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000101/20893 |  |
+2026-11-10T14:46:49.416071814+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:46:49.417533511+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000004/20893 |  |
+2026-11-10T14:46:49.417885762+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:46:49.418960849+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000201/20893 |  |
+2026-11-10T14:46:57.132858042+08:00[36m [INFO][WEBUI][Proc] [0mLogin success { username: admin , userid: d3337d19-2085-434a-a65b-19c00a0e949b , tenantid: 4611e64c-37da-41f5-8c23-973b5eee5bd9 }
+2026-11-10T14:46:57.132911631+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | POST    | /api/login |  |
+2026-11-10T14:46:57.139237056+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:46:57.141364702+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000101/20893 |  |
+2026-11-10T14:47:04.949368496+08:00[36m [INFO][WEBUI][Proc] [0mLogin success { username: admin , userid: d3337d19-2085-434a-a65b-19c00a0e949b , tenantid: 4611e64c-37da-41f5-8c23-973b5eee5bd9 }
+2026-11-10T14:47:04.949423570+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | POST    | /api/login |  |
+2026-11-10T14:47:04.950057981+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:47:04.951890735+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000001/20893 |  |
+2026-11-10T14:47:04.952254268+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:47:04.953487275+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000101/20893 |  |
+2026-11-10T14:47:04.953978881+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:47:04.955226368+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000004/20893 |  |
+2026-11-10T14:47:04.955556323+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:47:04.956508592+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000201/20893 |  |
+2026-11-10T14:47:05.182954534+08:00[36m [INFO][WEBUI][Proc] [0mLogin success { username: admin , userid: d3337d19-2085-434a-a65b-19c00a0e949b , tenantid: 4611e64c-37da-41f5-8c23-973b5eee5bd9 }
+2026-11-10T14:47:05.183018137+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | POST    | /api/login |  |
+2026-11-10T14:47:05.183642381+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:47:05.185505906+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000001/20893 |  |
+2026-11-10T14:47:05.185861987+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:47:05.186951225+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000101/20893 |  |
+2026-11-10T14:47:05.187534875+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:47:05.188195775+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-101
+2026-11-10T14:47:05.201358034+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000101/20893/1 |  |
+2026-11-10T14:47:05.201728841+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:47:05.202969433+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000004/20893 |  |
+2026-11-10T14:47:05.203316128+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:47:05.204487265+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000201/20893 |  |
+2026-11-10T14:47:05.205002323+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:47:05.205312078+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-201
+2026-11-10T14:47:05.209205560+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000201/20893/1 |  |
+2026-11-10T14:47:39.808289189+08:00[36m [INFO][WEBUI][Proc] [0mLogin success { username: admin , userid: d3337d19-2085-434a-a65b-19c00a0e949b , tenantid: 4611e64c-37da-41f5-8c23-973b5eee5bd9 }
+2026-11-10T14:47:39.808351700+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | POST    | /api/login |  |
+2026-11-10T14:47:39.814521911+08:00[36m [INFO][WEBUI][Proc] [0mDelete One Subscriber Data
+2026-11-10T14:47:39.817043943+08:00[36m [INFO][WEBUI][GIN] [0m| 204 |       127.0.0.1 | DELETE  | /api/subscriber/imsi-208930000000101/20893 |  |
+2026-11-10T14:47:39.820793329+08:00[36m [INFO][WEBUI][Proc] [0mDelete One Subscriber Data
+2026-11-10T14:47:39.823059871+08:00[36m [INFO][WEBUI][GIN] [0m| 204 |       127.0.0.1 | DELETE  | /api/subscriber/imsi-208930000000201/20893 |  |
+2026-11-10T14:47:40.322762133+08:00[36m [INFO][WEBUI][Proc] [0mLogin success { username: admin , userid: d3337d19-2085-434a-a65b-19c00a0e949b , tenantid: 4611e64c-37da-41f5-8c23-973b5eee5bd9 }
+2026-11-10T14:47:40.322817905+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | POST    | /api/login |  |
+2026-11-10T14:47:40.323435147+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:47:40.325569483+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000001/20893 |  |
+2026-11-10T14:47:40.326033760+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:47:40.327450630+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000101/20893 |  |
+2026-11-10T14:47:40.328118431+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:47:40.328446582+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-101
+2026-11-10T14:47:40.333909885+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000101/20893/1 |  |
+2026-11-10T14:47:40.334274952+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:47:40.335465526+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000004/20893 |  |
+2026-11-10T14:47:40.335791446+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:47:40.337046309+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000201/20893 |  |
+2026-11-10T14:47:40.337550923+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:47:40.337821527+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-201
+2026-11-10T14:47:40.341951816+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000201/20893/1 |  |
+2026-11-10T14:48:27.637318935+08:00[36m [INFO][WEBUI][Proc] [0mLogin success { username: admin , userid: d3337d19-2085-434a-a65b-19c00a0e949b , tenantid: 4611e64c-37da-41f5-8c23-973b5eee5bd9 }
+2026-11-10T14:48:27.637378283+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | POST    | /api/login |  |
+2026-11-10T14:48:27.643712744+08:00[36m [INFO][WEBUI][Proc] [0mDelete One Subscriber Data
+2026-11-10T14:48:27.646436964+08:00[36m [INFO][WEBUI][GIN] [0m| 204 |       127.0.0.1 | DELETE  | /api/subscriber/imsi-208930000000101/20893 |  |
+2026-11-10T14:48:27.650103762+08:00[36m [INFO][WEBUI][Proc] [0mDelete One Subscriber Data
+2026-11-10T14:48:27.652037030+08:00[36m [INFO][WEBUI][GIN] [0m| 204 |       127.0.0.1 | DELETE  | /api/subscriber/imsi-208930000000201/20893 |  |
+2026-11-10T14:48:27.874536068+08:00[36m [INFO][WEBUI][Proc] [0mLogin success { username: admin , userid: d3337d19-2085-434a-a65b-19c00a0e949b , tenantid: 4611e64c-37da-41f5-8c23-973b5eee5bd9 }
+2026-11-10T14:48:27.874591166+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | POST    | /api/login |  |
+2026-11-10T14:48:27.875205701+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:48:27.877013356+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000001/20893 |  |
+2026-11-10T14:48:27.877443272+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:48:27.878780856+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000101/20893 |  |
+2026-11-10T14:48:27.879394044+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:48:27.879647981+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-101
+2026-11-10T14:48:27.882504455+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000101/20893/1 |  |
+2026-11-10T14:48:27.882865286+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:48:27.884306379+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000004/20893 |  |
+2026-11-10T14:48:27.884671999+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:48:27.885735987+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000201/20893 |  |
+2026-11-10T14:48:27.886309592+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:48:27.886536229+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-201
+2026-11-10T14:48:27.889685100+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000201/20893/1 |  |
+2026-11-10T14:56:07.420903577+08:00[36m [INFO][WEBUI][Proc] [0mLogin success { username: admin , userid: d3337d19-2085-434a-a65b-19c00a0e949b , tenantid: 4611e64c-37da-41f5-8c23-973b5eee5bd9 }
+2026-11-10T14:56:07.421049880+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | POST    | /api/login |  |
+2026-11-10T14:56:07.427384108+08:00[36m [INFO][WEBUI][Proc] [0mDelete One Subscriber Data
+2026-11-10T14:56:07.429649863+08:00[36m [INFO][WEBUI][GIN] [0m| 204 |       127.0.0.1 | DELETE  | /api/subscriber/imsi-208930000000201/20893 |  |
+2026-11-10T14:56:07.650620028+08:00[36m [INFO][WEBUI][Proc] [0mLogin success { username: admin , userid: d3337d19-2085-434a-a65b-19c00a0e949b , tenantid: 4611e64c-37da-41f5-8c23-973b5eee5bd9 }
+2026-11-10T14:56:07.650701448+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | POST    | /api/login |  |
+2026-11-10T14:56:07.651344751+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:07.653426500+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000001/20893 |  |
+2026-11-10T14:56:07.653861735+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:07.655863494+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000101/20893 |  |
+2026-11-10T14:56:07.656289905+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:07.657730076+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000006/20893 |  |
+2026-11-10T14:56:07.658091668+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:07.659255726+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000201/20893 |  |
+2026-11-10T14:56:07.659812334+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:07.660066321+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-201
+2026-11-10T14:56:07.663108406+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000201/20893/1 |  |
+2026-11-10T14:56:46.599322991+08:00[36m [INFO][WEBUI][Proc] [0mLogin success { username: admin , userid: d3337d19-2085-434a-a65b-19c00a0e949b , tenantid: 4611e64c-37da-41f5-8c23-973b5eee5bd9 }
+2026-11-10T14:56:46.599390009+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | POST    | /api/login |  |
+2026-11-10T14:56:46.600000186+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.601988604+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000001/20893 |  |
+2026-11-10T14:56:46.602367121+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.603945277+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000101/20893 |  |
+2026-11-10T14:56:46.604280595+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.605834014+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000102/20893 |  |
+2026-11-10T14:56:46.606381787+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.606609030+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-102
+2026-11-10T14:56:46.609953391+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000102/20893/1 |  |
+2026-11-10T14:56:46.610361479+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.611407550+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000103/20893 |  |
+2026-11-10T14:56:46.611976559+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.612300543+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-103
+2026-11-10T14:56:46.615299151+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000103/20893/1 |  |
+2026-11-10T14:56:46.615650099+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.616797920+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000104/20893 |  |
+2026-11-10T14:56:46.617293961+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.617559210+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-104
+2026-11-10T14:56:46.620415429+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000104/20893/1 |  |
+2026-11-10T14:56:46.620732470+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.621712000+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000105/20893 |  |
+2026-11-10T14:56:46.622226243+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.622443354+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-105
+2026-11-10T14:56:46.625527721+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000105/20893/1 |  |
+2026-11-10T14:56:46.625842527+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.626840807+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000106/20893 |  |
+2026-11-10T14:56:46.627348287+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.627567202+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-106
+2026-11-10T14:56:46.630336900+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000106/20893/1 |  |
+2026-11-10T14:56:46.630635778+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.631637763+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000107/20893 |  |
+2026-11-10T14:56:46.632131939+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.632386452+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-107
+2026-11-10T14:56:46.635296899+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000107/20893/1 |  |
+2026-11-10T14:56:46.635648589+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.636707186+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000108/20893 |  |
+2026-11-10T14:56:46.637199151+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.637438422+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-108
+2026-11-10T14:56:46.640464128+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000108/20893/1 |  |
+2026-11-10T14:56:46.640797844+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.641819981+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000109/20893 |  |
+2026-11-10T14:56:46.642340427+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.642571738+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-109
+2026-11-10T14:56:46.645485882+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000109/20893/1 |  |
+2026-11-10T14:56:46.645806722+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.646910355+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000110/20893 |  |
+2026-11-10T14:56:46.647418761+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.647687399+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-110
+2026-11-10T14:56:46.650950935+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000110/20893/1 |  |
+2026-11-10T14:56:46.651313544+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.652370352+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000111/20893 |  |
+2026-11-10T14:56:46.652850657+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.653091767+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-111
+2026-11-10T14:56:46.656042024+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000111/20893/1 |  |
+2026-11-10T14:56:46.656355975+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.657656098+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000112/20893 |  |
+2026-11-10T14:56:46.658224228+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.658460328+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-112
+2026-11-10T14:56:46.661337179+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000112/20893/1 |  |
+2026-11-10T14:56:46.661694523+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.662726079+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000113/20893 |  |
+2026-11-10T14:56:46.663259314+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.663482679+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-113
+2026-11-10T14:56:46.666270360+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000113/20893/1 |  |
+2026-11-10T14:56:46.666604901+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.667719921+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000114/20893 |  |
+2026-11-10T14:56:46.668246328+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.668478226+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-114
+2026-11-10T14:56:46.671322697+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000114/20893/1 |  |
+2026-11-10T14:56:46.671661460+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.672685777+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000115/20893 |  |
+2026-11-10T14:56:46.673178987+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.673425103+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-115
+2026-11-10T14:56:46.676357945+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000115/20893/1 |  |
+2026-11-10T14:56:46.676662567+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.677666692+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000116/20893 |  |
+2026-11-10T14:56:46.678134662+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.678351724+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-116
+2026-11-10T14:56:46.681124910+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000116/20893/1 |  |
+2026-11-10T14:56:46.681472563+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.682482528+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000117/20893 |  |
+2026-11-10T14:56:46.683007239+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.683225403+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-117
+2026-11-10T14:56:46.686246426+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000117/20893/1 |  |
+2026-11-10T14:56:46.686602222+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.687635556+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000118/20893 |  |
+2026-11-10T14:56:46.688122506+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.688344599+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-118
+2026-11-10T14:56:46.691192739+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000118/20893/1 |  |
+2026-11-10T14:56:46.691501216+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.692558296+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000119/20893 |  |
+2026-11-10T14:56:46.693044410+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.693281077+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-119
+2026-11-10T14:56:46.696320681+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000119/20893/1 |  |
+2026-11-10T14:56:46.696620986+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.697721071+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000120/20893 |  |
+2026-11-10T14:56:46.698221200+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.698468788+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-120
+2026-11-10T14:56:46.701357871+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000120/20893/1 |  |
+2026-11-10T14:56:46.701661876+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.702885015+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000006/20893 |  |
+2026-11-10T14:56:46.703209689+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.704546604+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000201/20893 |  |
+2026-11-10T14:56:46.704869494+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.705962092+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000202/20893 |  |
+2026-11-10T14:56:46.706444966+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.706719300+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-202
+2026-11-10T14:56:46.709680078+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000202/20893/1 |  |
+2026-11-10T14:56:46.709984700+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.711049278+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000203/20893 |  |
+2026-11-10T14:56:46.711530074+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.711757172+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-203
+2026-11-10T14:56:46.715386202+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000203/20893/1 |  |
+2026-11-10T14:56:46.715714736+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.716887250+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000204/20893 |  |
+2026-11-10T14:56:46.717369413+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.717615155+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-204
+2026-11-10T14:56:46.720679795+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000204/20893/1 |  |
+2026-11-10T14:56:46.721025826+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.722171048+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000205/20893 |  |
+2026-11-10T14:56:46.722662052+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.722930198+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-205
+2026-11-10T14:56:46.725987829+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000205/20893/1 |  |
+2026-11-10T14:56:46.726306621+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.727388089+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000206/20893 |  |
+2026-11-10T14:56:46.727889605+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.728137113+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-206
+2026-11-10T14:56:46.731438503+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000206/20893/1 |  |
+2026-11-10T14:56:46.731808416+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.733235407+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000207/20893 |  |
+2026-11-10T14:56:46.733805406+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.734083680+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-207
+2026-11-10T14:56:46.737153448+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000207/20893/1 |  |
+2026-11-10T14:56:46.737515663+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.738543216+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000208/20893 |  |
+2026-11-10T14:56:46.739045374+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.739274615+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-208
+2026-11-10T14:56:46.742249187+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000208/20893/1 |  |
+2026-11-10T14:56:46.742603437+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.743732227+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000209/20893 |  |
+2026-11-10T14:56:46.744268101+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.744494864+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-209
+2026-11-10T14:56:46.747332734+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000209/20893/1 |  |
+2026-11-10T14:56:46.747674928+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.748689885+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000210/20893 |  |
+2026-11-10T14:56:46.749210380+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.749430638+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-210
+2026-11-10T14:56:46.752246802+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000210/20893/1 |  |
+2026-11-10T14:56:46.752589114+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.753623719+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000211/20893 |  |
+2026-11-10T14:56:46.754140671+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.754363784+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-211
+2026-11-10T14:56:46.757272982+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000211/20893/1 |  |
+2026-11-10T14:56:46.757614043+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.758762852+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000212/20893 |  |
+2026-11-10T14:56:46.759285180+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.759533082+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-212
+2026-11-10T14:56:46.762399052+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000212/20893/1 |  |
+2026-11-10T14:56:46.762738182+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.763840918+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000213/20893 |  |
+2026-11-10T14:56:46.764368467+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.764583837+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-213
+2026-11-10T14:56:46.767579852+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000213/20893/1 |  |
+2026-11-10T14:56:46.767943902+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.768985994+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000214/20893 |  |
+2026-11-10T14:56:46.769508005+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.769735697+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-214
+2026-11-10T14:56:46.772648918+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000214/20893/1 |  |
+2026-11-10T14:56:46.772984394+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.774019728+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000215/20893 |  |
+2026-11-10T14:56:46.774531286+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.774751736+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-215
+2026-11-10T14:56:46.777654175+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000215/20893/1 |  |
+2026-11-10T14:56:46.777994594+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.779066583+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000216/20893 |  |
+2026-11-10T14:56:46.779641107+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.779893278+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-216
+2026-11-10T14:56:46.782817584+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000216/20893/1 |  |
+2026-11-10T14:56:46.783203766+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.784500349+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000217/20893 |  |
+2026-11-10T14:56:46.785112875+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.785390990+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-217
+2026-11-10T14:56:46.788557453+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000217/20893/1 |  |
+2026-11-10T14:56:46.788887968+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.790018742+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000218/20893 |  |
+2026-11-10T14:56:46.790531911+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.790807326+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-218
+2026-11-10T14:56:46.793850317+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000218/20893/1 |  |
+2026-11-10T14:56:46.794168933+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.795360239+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000219/20893 |  |
+2026-11-10T14:56:46.795919589+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.796212091+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-219
+2026-11-10T14:56:46.799587843+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000219/20893/1 |  |
+2026-11-10T14:56:46.800055150+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T14:56:46.801205524+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000220/20893 |  |
+2026-11-10T14:56:46.801775981+08:00[36m [INFO][WEBUI][Proc] [0mPost One Subscriber Data
+2026-11-10T14:56:46.802036007+08:00[36m [INFO][WEBUI][Proc] [0mPostSubscriberByID gpsi: msisdn-220
+2026-11-10T14:56:46.805001996+08:00[36m [INFO][WEBUI][GIN] [0m| 201 |       127.0.0.1 | POST    | /api/subscriber/imsi-208930000000220/20893/1 |  |
+2026-11-10T15:20:20.529289308+08:00[36m [INFO][WEBUI][Proc] [0mLogin success { username: admin , userid: d3337d19-2085-434a-a65b-19c00a0e949b , tenantid: 4611e64c-37da-41f5-8c23-973b5eee5bd9 }
+2026-11-10T15:20:20.529353242+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | POST    | /api/login |  |
+2026-11-10T15:20:20.529936680+08:00[36m [INFO][WEBUI][Proc] [0mGet One Subscriber Data
+2026-11-10T15:20:20.531855607+08:00[36m [INFO][WEBUI][GIN] [0m| 200 |       127.0.0.1 | GET     | /api/subscriber/imsi-208930000000004/20893 |  |
+2026-11-10T15:20:20.532276209+08:00[36m [INFO][WEBUI][Proc] [0mPut One Subscriber Data
+2026-11-10T15:20:20.532544262+08:00[36m [INFO][WEBUI][Proc] [0mPutSubscriberByID gpsi: msisdn-4
+2026-11-10T15:20:20.537727650+08:00[36m [INFO][WEBUI][GIN] [0m| 204 |       127.0.0.1 | PUT     | /api/subscriber/imsi-208930000000004/20893 |  |
+2026-11-10T15:37:36.950331808+08:00[36m [INFO][WEBUI][Main] [0mTerminating WebUI-AF...
+2026-11-10T15:37:36.950354806+08:00[36m [INFO][WEBUI][BillingLog] [0mStop BillingDomain server
+2026-11-10T15:37:36.950382614+08:00[36m [INFO][WEBUI][BillingLog] [0mBillingDomain server stopped
+2026-11-10T15:37:36.950387218+08:00[36m [INFO][WEBUI][Main] [0mstopping HTTP server
+2026-11-10T15:37:36.950439800+08:00[36m [INFO][WEBUI][Main] [0mWebUI-AF Terminated

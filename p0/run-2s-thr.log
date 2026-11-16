@@ -1,0 +1,35 @@
+disk avail 15G
+/home/king25158986/free5gc-NWDAF/5G_Infrastructure/config/5GC/nwdafcfg.yaml:      samplingInterval: 2   # UPF 
+/home/king25158986/free5gc-NWDAF/5G_Infrastructure/config/5GC/smfcfg.yaml:  urrPeriod: 2 # default usage repor
+/home/king25158986/free5gc-NWDAF/5G_Infrastructure/config/5GC/UPF-EES.yaml:  periodSec: 2   # MVE P0 (2026-11-
+/home/king25158986/free5gc-NWDAF/5G_Infrastructure/config/5GC/UPF-EES2.yaml:  periodSec: 2   # MVE P0 (2026-11
+2026-11-10 08:16:33,371 INFO Unsubscribe: subscriptionId=32776dc8-ac65-48da-a7fe-d4954bf1c0e6 status=204
+gNB stopped
+gNB2 stopped
+nwdaf stopped
+core stopped
+upf-ees upf stopped
+upf-ees2 upf stopped
+upf-ees upf started
+upf-ees2 upf started
+8
+nwdaf started
+gNB gnb=1 ue_procs=4
+gNB2 gnb=1 ue_procs=5
+new UEs: 40  #1 pass 40  #2 pass 40
+existing UEs: 6  #1 pass 6  #2 pass 6
+wrote /home/king25158986/Research-data-collection/p0/ue_check.csv
+subscribed 2026-11-10T08:18:42Z
+gNB pings: 23
+gNB2 pings: 23
+window 2026-11-10T08:19:28Z .. 2026-11-10T08:29:28Z
+Traceback (most recent call last):
+  File "/home/king25158986/Research-data-collection/scripts/p0_check_collection.py", line 135, in <module>
+    main()
+  File "/home/king25158986/Research-data-collection/scripts/p0_check_collection.py", line 116, in main
+    w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+IndexError: list index out of range
+upf-ees drop-logs since 2026-11-10T08:18:42Z: 0
+upf-ees2 drop-logs since 2026-11-10T08:18:42Z: 0
+ulPkts/window 0 count 13800
+RUN-DONE 2s-thr

@@ -1,0 +1,11 @@
+window 2026-11-10T08:04:30Z .. 2026-11-10T08:14:30Z (600 s)
+#3 NWDAF per-SUPI SMF subscriptions since 2026-11-10T08:03:48Z: 46 (new SUPIs 40/40)
+#3 UPF EES subscriptions notifying: {'UPF-EES': 23, 'UPF-EES2': 23}
+#3 SUPIs with records: 46/46; record ip == UE ip: 46/46
+#4 records per UE: min 300 max 300 (expected 300); dup timestamps total 0
+#4 interval: min 2.0 max 2.0; share of intervals == 2 s: worst UE 1.0
+#4 nonzero-volume records per UE: min 192 max 192; median spacing between nonzero records (s): [(4.0, 46)]; max spacing 4.0
+#4 UL packets reported / ping replies (each reply = request that crossed the UPF UL path): min 0.9997 median 1.00015 max 1.0003
+wrote p0/collection_check_2s.csv
+upf-ees drops 08:04-08:14: 0
+upf-ees2 drops 08:04-08:14: 0

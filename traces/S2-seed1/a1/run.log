@@ -1,0 +1,25 @@
+[S2-seed1 a1] 2026-11-11T06:37:15Z disk avail 17G
+upf-ees: new upf pids=2622 
+upf-ees2: new upf pids=2625 
+core up: 8/8, smf=/home/vagrant/mve-bin/smf
+nwdaf: /home/vagrant/mve-bin/nwdaf
+gNB gnb=1 ue_procs=2
+gNB2 gnb=1 ue_procs=2
+existing UEs: 6  #1 pass 6  #2 pass 6
+wrote /home/king25158986/Research-data-collection/traces/S2-seed1/a1/ue_check.csv
+MEC iperf3 servers: 23
+MEC2 iperf3 servers: 23
+gNB UEs 23 segments 1098
+gNB2 UEs 23 segments 1088
+[S2-seed1] subscribed at/after 2026-11-11T06:39:32.697Z
+gNB runner started
+gNB2 runner started
+[S2-seed1] T0 2026-11-11T06:40:39Z  end 2026-11-11T07:10:39Z
+gNB runner done
+gNB2 runner done
+[S2-seed1] consumer unsubscribed 2026-11-11T07:11:10Z
+upf-ees drop-logs since 2026-11-11T06:39:32.697Z: 0
+upf-ees2 drop-logs since 2026-11-11T06:39:32.697Z: 0
+[S2-seed1 a1] records 87170 dup 0 unmapped 0 ip_mismatch 0 supis 46/46 | missing 0/82800 (0.000%) collisions 0 | UPF/iperf3 1.00036 (hdr8 0.99373) per-UE {'min': 1.0002683979624423, 'max': 1.0005318838768795} corr1s 0.9999256133284504 | iperf3 launches 2183 failed 0 busy 0 skipped 1 late p99 0.004747748374938931 -> VALID
+deleted 87170 MongoDB records of this run (exported 87170)
+RUN-DONE S2-seed1 a1 rc=0
